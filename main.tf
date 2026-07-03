@@ -3,6 +3,6 @@ resource "azurerm_resource_group" "main" {
   location = var.location
   tags = {
     "Environment" = "test"
-    "Author"      = "ktkr"
+    "Author"      = "mandy"
   }
 }
