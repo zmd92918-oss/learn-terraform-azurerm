@@ -54,8 +54,10 @@ variable "admin_username" {
   default     = "azureuser"
 }
 
-variable "ssh_public_key" {
-  description = "SSH公開鍵（~/.ssh/id_rsa.pub の中身。パスワード認証は使わずSSH鍵推奨）"
+variable "admin_password" {
+  description = "VMの管理者パスワード（12文字以上、大文字・小文字・数字・記号のうち3種類以上必須）"
   type        = string
+  sensitive   = true
 }
+
 
